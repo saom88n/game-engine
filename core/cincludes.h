@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef CINCLUDES_H
 #define CINCLUDES_H
 
