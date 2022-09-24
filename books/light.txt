@@ -1,0 +1,2 @@
+http://buildnewgames.com/lighting/
+https://stackoverflow.com/questions/746899/how-to-calculate-an-rgb-colour-by-specifying-an-alpha-blending-amount/746937#746937
