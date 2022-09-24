@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 // TODO: File logger ($time.log)
+//       INFO : $time :: LOG_MESSAGE
 
 // Error log
 
