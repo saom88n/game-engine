@@ -4,6 +4,6 @@ int main(void)
 {
     WindowInit(screen_width, screen_height, FPS);
     Loop();
-    CloseWindow();
+    eCloseWindow();
     return EXIT_SUCCESS;
 }

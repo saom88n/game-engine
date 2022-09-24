@@ -8,7 +8,7 @@ void WindowInit(u16 screen_width, u16 screen_height, u8 fps) {
     SetTargetFPS(fps);
     LOG_PRINT("WINDOW INIT SUCCESS");
 }
-void CloseWindow() {
+void eCloseWindow() {
     CloseWindow();
     LOG_PRINT("WINDOW CLOSE SUCCESS");
 }
