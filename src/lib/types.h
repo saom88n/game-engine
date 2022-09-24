@@ -28,7 +28,8 @@ typedef Vector4  Vec4;
 
 // Figures etc.
 
-typedef Texture2D T2D;
+typedef Texture2D T2D ;
 typedef Rectangle Rect;
+typedef Image     Img ;
 
 #endif
