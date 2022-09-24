@@ -2,7 +2,7 @@
 #define LOOP_H
 
 #include "includes.h"
-#include "core/cutil.h"
+#include "core/coreutil.h"
 
 #define MAX_COLUMNS 20
 
