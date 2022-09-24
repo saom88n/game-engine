@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+// TODO: File logger ($time.log)
+
 // Error log
 
 #define ERROR_EXIT(...)         fprintf(stderr, __VA_ARGS__)

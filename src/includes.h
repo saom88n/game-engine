@@ -3,6 +3,7 @@
     2. raylib includes                  ("ray*")
     3. lib includes                    ("lib/*")
     4. core includes                  ("core/*")
+    5. other
 */
 
 #ifndef __INCLUDES_H__
@@ -18,7 +19,7 @@
 #include "lib/defines.h"
 
 #include "core/window.h"
-#include "core/cutil.h"
+#include "core/coreutil.h"
 
 #include "loop.h"
 

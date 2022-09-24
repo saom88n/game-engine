@@ -1,7 +1,7 @@
-#ifndef CUTIL_H
-#define CUTIL_H
+#ifndef COREUTIL_H
+#define COREUTIL_H
 
-#include "cincludes.h"
+#include "coreincludes.h"
 
 Vec2 get_center() {
     return (Vec2) {(f32) screen_width / 2, (f32) screen_height / 2};

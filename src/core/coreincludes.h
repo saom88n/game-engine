@@ -4,8 +4,8 @@
     3. lib includes                 ("../lib/*")
 */
 
-#ifndef __CINCLUDES_H__
-#define __CINCLUDES_H__
+#ifndef __COREINCLUDES_H__
+#define __COREINCLUDES_H__
 
 #include <math.h>
 
