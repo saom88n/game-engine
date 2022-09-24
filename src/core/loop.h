@@ -3,8 +3,7 @@
 
 #include "cincludes.h"
 #include "cutil.h"
-#include "vec2f.h"
-#include "libgamec++/libgamec++.hpp"
+#include "entity/Entity.h"
 
 int loop() {
     Rect r = {get_center().x, get_center().y, 50, 50};
@@ -16,7 +15,6 @@ int loop() {
                 DrawRectangleRec(r, BLACK);
             LOG_PRINT("%f", r.x);
         EndDrawing();
-        printi();
     }
     return EXIT_SUCCESS;
 }

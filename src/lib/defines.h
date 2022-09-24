@@ -7,7 +7,7 @@
 // Exit codes
 
 #define EXIT_SUCCESS  0
-#define EXIT_FAILRUE -1
+#define EXIT_FAILURE -1
 
 // Window parameters
 

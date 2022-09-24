@@ -1,5 +1,13 @@
-#ifndef INCLUDES_H
-#define INCLUDES_H
+/*
+    1. Default libraries                    (<>)
+    2. raylib includes                  ("ray*")
+    3. lib includes                    ("lib/*")
+    4. core includes                  ("core/*")
+    5. libgamec++ include  ("core/libgamec++/*")
+*/
+
+#ifndef __INCLUDES_H__
+#define __INCLUDES_H__
 
 #include <math.h>
 
@@ -13,4 +21,5 @@
 #include "core/window.h"
 #include "core/loop.h"
 #include "core/cutil.h"
+
 #endif

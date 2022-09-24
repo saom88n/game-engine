@@ -1,5 +1,11 @@
-#ifndef CINCLUDES_H
-#define CINCLUDES_H
+/*
+    1. Default libraries                    (<>)
+    2. raylib includes                  ("ray*")
+    3. lib includes                 ("../lib/*")
+*/
+
+#ifndef __CINCLUDES_H__
+#define __CINCLUDES_H__
 
 #include <math.h>
 
