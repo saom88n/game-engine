@@ -4,4 +4,4 @@ C GAME ENGINE
 * src/core - game engine core
 * src/lib  - game engine libs
 
-# books    - books and topics
+* books    - books and topics
