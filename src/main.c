@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    window_init(screen_width, screen_height, FPS);
-    loop();
-    close_window();
+    WindowInit(screen_width, screen_height, FPS);
+    Loop();
+    CloseWindow();
     return EXIT_SUCCESS;
 }

@@ -11,6 +11,6 @@ C GAME ENGINE
 * include files (includes.h, cincludes.h...)
 * #define __FILENAME_H__
 
-* other files 
+* other   files 
 * #define FILENAME_H
 

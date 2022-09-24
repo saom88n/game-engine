@@ -6,7 +6,7 @@
 
 #define MAX_COLUMNS 20
 
-int loop() {
+int Loop() {
     // Main loop in engine
     // Test game 
     Camera camera = { 0 };

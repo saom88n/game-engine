@@ -12,8 +12,8 @@
 // Window parameters
 
 const u16 screen_width  = 1280;
-const u16 screen_height = 720;
-const u16 FPS           = 60 ;
+const u16 screen_height =  720;
+const u16 FPS           =   60;
 
 // Else
 

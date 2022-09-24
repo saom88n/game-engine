@@ -3,7 +3,7 @@
 
 #include "coreincludes.h"
 
-Vec2 get_center() {
+Vec2 GetCenter() {
     return (Vec2) {(f32) screen_width / 2, (f32) screen_height / 2};
 }
 
@@ -13,11 +13,6 @@ f32 Vec2MoveX(Vec2 v, Vec2 t, f32 d) {
 
 f32 Vec2MoveY(Vec2 v, Vec2 t, f32 d) {
     return v.y > 0 ? v.y-d : v.y ; 
-}
-
-void V2MoveTowards(Vec2 v, Vec2 t, f32 d) {
-    v.x = Vector2MoveTowards(v, t, d).x;
-    v.y = Vector2MoveTowards(v, t, d).y;
 }
 
 #endif
