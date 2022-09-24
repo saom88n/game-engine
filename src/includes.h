@@ -14,9 +14,9 @@
 #include "raylib.h"
 #include "raymath.h"
 
-#include "lib/types.h"
-#include "lib/util.h"
-#include "lib/defines.h"
+#include "lib/base/types.h"
+#include "lib/base/util.h"
+#include "lib/base/defines.h"
 
 #include "core/window.h"
 #include "core/coreutil.h"
