@@ -13,7 +13,7 @@ int loop() {
     camera.position = (Vec3){ 4.0f, 2.0f, 4.0f };
     camera.target = (Vec3){ 0.0f, 1.8f, 0.0f };
     camera.up = (Vec3){ 0.0f, 1.0f, 0.0f };
-    camera.fovy = 60.0f;
+    camera.fovy = 65.0f;
     camera.projection = CAMERA_PERSPECTIVE;
 
     f32 heights[MAX_COLUMNS] = { 0 };
