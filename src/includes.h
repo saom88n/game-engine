@@ -20,6 +20,8 @@
 
 #include "core/window.h"
 #include "core/coreutil.h"
+#include "core/coreutil.h"
+#include "core/corevec2.h"
 
 #include "loop.h"
 
