@@ -3,7 +3,7 @@
 #ifndef COREVEC2_H
 #define COREVEC2_H
 
-#include "coreincludes.h"
+#include "includes/coreincludes.h"
 
 Vec2 GetCenterOfScreen() {
     return (Vec2) {(f32) screen_width / 2, (f32) screen_height / 2};
