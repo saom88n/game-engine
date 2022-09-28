@@ -1,5 +1,5 @@
 /*
-    * NOTHING HERE *
+    * FUNCS AND SRUCTS *
     All in the gameobject folder will be written on Rust
 */
 #ifndef GAMEOBJECT_H
