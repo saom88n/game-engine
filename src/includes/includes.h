@@ -3,7 +3,8 @@
     2. raylib includes                  ("ray*")
     3. lib includes                    ("lib/*")
     4. core includes                  ("core/*")
-    5. other
+    5. module includes        ("core/modules/*")
+    6. other
 */
 
 #ifndef __INCLUDES_H__
@@ -20,8 +21,9 @@
 
 #include "../core/window.h"
 #include "../core/coreutil.h"
-#include "../core/coreutil.h"
 #include "../core/corevec2.h"
+
+#include "../core/modules/gameobject/gameobject.h"
 
 #include "../loop.h"
 

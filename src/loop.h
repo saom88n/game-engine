@@ -2,13 +2,14 @@
 #define LOOP_H
 
 #include "includes/includes.h"
+#include "core/modules/gameobject/gameobject.h"
 
 #define MAX_COLUMNS 20
 
 int Loop() {
     // Main loop in engine
     // Test game 
-    Camera camera = { 0 };
+    /*Camera camera = { 0 };
     camera.position = (Vec3){ 4.0f, 2.0f, 4.0f };
     camera.target = (Vec3){ 0.0f, 1.8f, 0.0f };
     camera.up = (Vec3){ 0.0f, 1.0f, 0.0f };
@@ -54,9 +55,12 @@ int Loop() {
             DrawText("First person camera default controls:", 20, 20, 10, BLACK);
             DrawText("- Move with keys: W, A, S, D", 40, 40, 10, DARKGRAY);
             DrawText("- Mouse move to look around", 40, 60, 10, DARKGRAY);
+            print_info(e);
 
         EndDrawing();
-    }
+    }*/
+
+
     return EXIT_SUCCESS;
 }
 
