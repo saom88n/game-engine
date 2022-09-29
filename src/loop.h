@@ -2,7 +2,6 @@
 #define LOOP_H
 
 #include "includes/includes.h"
-#include "core/modules/gameobject/gameobject.h"
 
 #define MAX_COLUMNS 20
 

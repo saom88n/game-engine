@@ -1,16 +1,17 @@
-/*
-    * FUNCS AND SRUCTS *
-    All in the gameobject folder will be written on Rust
-*/
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-typedef struct {
-    u32 id, generation;
-} GameObject;
+#include <vector>
+#include "../components/component.h"
 
-void PrintInfo(GameObject go);
-void SetId(GameObject* go, u32 id); // usage : SetId(&obj, value);
-void SetGeneration(GameObject* go, u32 gen) // usage : SetGeneration(&obj, value);
+class GameObject {
+
+public:
+    GameObject() = default;
+    ~GameObject() = default;
+
+private:
+    std::vector<Component> components;
+}
 
 #endif

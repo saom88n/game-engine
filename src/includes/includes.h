@@ -23,8 +23,6 @@
 #include "../core/coreutil.h"
 #include "../core/corevec2.h"
 
-#include "../core/modules/gameobject/gameobject.h"
-
 #include "../loop.h"
 
 #endif
