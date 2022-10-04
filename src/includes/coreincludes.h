@@ -15,5 +15,6 @@
 #include "../lib/base/types.h"
 #include "../lib/base/util.h"
 #include "../lib/base/defines.h"
+#include "../lib/base/uuid.h"
 
 #endif

@@ -19,12 +19,15 @@
 #include "../lib/base/types.h"
 #include "../lib/base/util.h"
 #include "../lib/base/defines.h"
+#include "../lib/base/uuid.h"
 
 #include "../core/window.h"
 #include "../core/coreutil.h"
 #include "../core/corevec2.h"
 
-#include "../core/modules/components/components.h"
+#include "../core/modules/components.h"
+#include "../core/modules/colors.h"
+#include "../core/modules/gameobject.h"
 
 #include "../loop.h"
 

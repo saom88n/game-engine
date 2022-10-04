@@ -33,5 +33,5 @@ typedef Matrix   Mat ;
 typedef Texture2D T2D ;
 typedef Rectangle Rect;
 typedef Image     Img ;
-
+typedef Camera2D Cam2D;
 #endif
