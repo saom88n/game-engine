@@ -5,7 +5,7 @@
 #ifndef COLORS_H
 #define COLORS_H
 
-#include "../includes/colorincludes.h"
+#include "../../includes/colorincludes.h"
 
 #define ALICE_BLUE    (Color) {240, 247, 255, 255}      // 94%, 97%, 100%, 100%
 #define ANTIQUE_WHITE (Color) {250, 235, 214, 255}      // 98%, 92%, 84%, 100%

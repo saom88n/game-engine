@@ -20,11 +20,13 @@ typedef int64_t  i64;
 typedef float    f32;
 typedef double   f64;
 
-// Vector types
+// Math types
 
 typedef Vector2  Vec2;
 typedef Vector3  Vec3;
 typedef Vector4  Vec4;
+
+typedef Matrix   Mat ;
 
 // Figures etc.
 

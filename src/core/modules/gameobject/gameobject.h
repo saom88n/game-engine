@@ -11,7 +11,6 @@ public:
     ~GameObject() = default;
 
 private:
-    std::vector<Component> components;
 }
 
 #endif

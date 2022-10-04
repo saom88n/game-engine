@@ -11,6 +11,7 @@
 #define __INCLUDES_H__
 
 #include <math.h>
+#include <iostream>
 
 #include "raylib.h"
 #include "raymath.h"
@@ -22,6 +23,8 @@
 #include "../core/window.h"
 #include "../core/coreutil.h"
 #include "../core/corevec2.h"
+
+#include "../core/modules/components/components.h"
 
 #include "../loop.h"
 
