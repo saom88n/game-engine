@@ -12,14 +12,14 @@ namespace Engine {
         TransformComponent() = default;
 		TransformComponent(const TransformComponent&) = default;
 		TransformComponent(const Vec3& translation)
-			: Translation(translation) {}
+			  : Translation(translation) {}
         
         Mat GetTransform() const {
-            Mat rotation = QuaternionToMatrix((Quaternion) {Rotation.x, Rotation.y, Rotation.z }); // RMAPI Matrix QuaternionToMatrix(Quaternion q)
+            Mat rotation = QuaternionToMatrix((Quaternion) {Rotation.x, Rotation.y, Rotation.z }); 
             
-            return MatrixMultiply(MatrixMultiply(MatrixTranslate(Translation.x, Translation.y, Translation.z),
-                                                 rotation), MatrixScale(Scale.x, Scale.y, Scale.z));
-        } 
+            return MatrixMultiply(MatrixMultiply(MatrixTranslate(Translation.x, Translation.y,
+                                Translation.z), rotation), MatrixScale(Scale.x, Scale.y, Scale.z));
+        }
 
     // Variables
     public:
@@ -72,8 +72,8 @@ namespace Engine {
     public:
 
         CameraComponent() = default;
-        CameraComponent(Vec2 offset, Vec2 target, f32 rotation, f32 zoom) : offset(offset), target(target),
-                                                                            rotation(rotation), zoom(zoom) {}
+        CameraComponent(Vec2 offset, Vec2 target, f32 rotation, f32 zoom) : offset(offset), 
+                                          target(target), rotation(rotation), zoom(zoom) {}
 		CameraComponent(const CameraComponent&) = default;
 
     // Variables
@@ -89,7 +89,7 @@ namespace Engine {
     // Functions and Constructors
     public:
         SpriteRendererComponent() = default;
-		SpriteRendererComponent(const SpriteRendererComponent&) = default;
+	    SpriteRendererComponent(const SpriteRendererComponent&) = default;
 		SpriteRendererComponent(const Color color)
 			: color(color) {}
 

@@ -1,7 +1,7 @@
 // Functions for working with Vec2
 
-#ifndef COREVEC2_H
-#define COREVEC2_H
+#ifndef COREVEC2_HPP
+#define COREVEC2_HPP
 
 #include "../includes/coreincludes.h"
 

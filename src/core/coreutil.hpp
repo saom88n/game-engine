@@ -1,5 +1,5 @@
-#ifndef COREUTIL_H
-#define COREUTIL_H
+#ifndef COREUTIL_HPP
+#define COREUTIL_HPP
 
 #include "../includes/coreincludes.h"
 

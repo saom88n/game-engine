@@ -8,7 +8,7 @@ namespace Engine {
     class UUID {    
     public:
 		UUID();
-		UUID(u64 uuid);
+		UUID(u64 uuid) : m_UUID(uuid) {};
 		UUID(const UUID&) = default;
 
 		operator u64() const { return m_UUID; }

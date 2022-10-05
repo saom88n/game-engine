@@ -13,12 +13,13 @@ namespace Engine {
         GameObject(UUID uuid, u16 generation) : uuid(uuid), generation(generation) {};
 
         template<typename T, typename... Args>
-        T& AddComponent(Args&&... args) {
+        T& AddComponent(Args&&... args) { // Add component to the object 
             T& component = new T();
-            return component;
+            return &component;
         }
 
     private:
+        // UUID(u64) and u16 generation
         UUID uuid;
         u16 generation;
     };
