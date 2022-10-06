@@ -2,7 +2,7 @@
 #define TYPES_H
 
 #include <inttypes.h>
-#include "raymath.h"
+// #include "raymath.h"
 #include "raylib.h"
 
 // Default types 
@@ -20,16 +20,18 @@ typedef int64_t  i64;
 typedef float    f32;
 typedef double   f64;
 
-// Vector types
+// Math types
 
 typedef Vector2  Vec2;
 typedef Vector3  Vec3;
 typedef Vector4  Vec4;
+
+typedef Matrix   Mat ;
 
 // Figures etc.
 
 typedef Texture2D T2D ;
 typedef Rectangle Rect;
 typedef Image     Img ;
-
+typedef Camera2D Cam2D;
 #endif
