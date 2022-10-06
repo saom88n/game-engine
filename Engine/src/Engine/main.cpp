@@ -1,15 +1,13 @@
+#include <iostream>
 #include "Engine.h"
+#include "entt/entt.hpp"
 
-int main(void)
+int main()
 {
-    /*
-    WindowInit(SCREEN_WIDTH, SCREEN_HEIGHT, FPS);
-    Loop();
-    StopWindow();*/
     Engine::WindowInit(SCREEN_WIDTH, SCREEN_HEIGHT, FPS);
-    Engine::TransformComponent a;
-    printf("%f %f %f", a.Scale.x, a.Scale.y, a.Scale.z);
-    Mat b = a.GetTransform();
+    
+    // Do something cool
+
     Engine::StopWindow();
     return EXIT_SUCCESS;
 }
