@@ -12,8 +12,8 @@ namespace Engine {
     public:
 
         TransformComponent() = default;
-		TransformComponent(const TransformComponent&) = default;
-		TransformComponent(const Vec3& translation)
+		    TransformComponent(const TransformComponent&) = default;
+		    TransformComponent(const Vec3& translation)
 			  : Translation(translation) {}
         
         Mat GetTransform() const {
@@ -35,7 +35,7 @@ namespace Engine {
     public:
 
         BoxCollider2DComponent() = default;
-		BoxCollider2DComponent(const BoxCollider2DComponent&) = default;
+		    BoxCollider2DComponent(const BoxCollider2DComponent&) = default;
 
     // Variables
     public:
@@ -56,7 +56,7 @@ namespace Engine {
     public:
 
         Rigidbody2DComponent() = default;
-		Rigidbody2DComponent(const Rigidbody2DComponent&) = default;
+		    Rigidbody2DComponent(const Rigidbody2DComponent&) = default;
 
     // Variables
     public:
@@ -75,7 +75,7 @@ namespace Engine {
         CameraComponent() = default;
         CameraComponent(Vec2 offset, Vec2 target, f32 rotation, f32 zoom) : Offset(offset), 
                                           Target(target), Rotation(rotation), Zoom(zoom) {}
-		CameraComponent(const CameraComponent&) = default;
+		    CameraComponent(const CameraComponent&) = default;
     // Variables
     public:
 
@@ -94,9 +94,9 @@ namespace Engine {
     public:
 
         SpriteRendererComponent() = default;
-	    SpriteRendererComponent(const SpriteRendererComponent&) = default;
-		SpriteRendererComponent(const Color color)
-			: color(color) {}
+	      SpriteRendererComponent(const SpriteRendererComponent&) = default;
+		    SpriteRendererComponent(const Color color)
+			                          : color(color) {}
     // Variables
     public: 
 

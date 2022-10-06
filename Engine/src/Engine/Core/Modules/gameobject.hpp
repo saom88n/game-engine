@@ -5,25 +5,23 @@
 #include "raylib.h"
 #include "raymath.h"
 #include "Engine/Lib/Base/types.h"
-
+#include "entt/entt.hpp"
+#include <string>
 namespace Engine {
 
     class GameObject {
     public:
 
         GameObject() = default;
-        GameObject(UUID uuid, u16 generation) : uuid(uuid), generation(generation) {};
-
-        template<typename T, typename... Args>
-        T& AddComponent(Args&&... args) { // Add component to the object 
-            T& component = new T();
-            return &component;
+        GameObject(UUID uuid, std::string name) : uuid(uuid), name(name){};
+        std::string GetName() {
+          return name; 
         }
-
     private:
         // UUID(u64) and u16 generation
         UUID uuid;
-        u16 generation;
+        std::string name;
+    		entt::entity EntityHandle{ entt::null };
     };
 
 }
