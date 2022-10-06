@@ -15,3 +15,8 @@ C GAME ENGINE
 * other   files 
 * #define FILENAME_H
 
+--------------------------------------------
+
+* Function names    PascalCase
+* Variable names    snake_case
+* const and defines UPPERCASE
