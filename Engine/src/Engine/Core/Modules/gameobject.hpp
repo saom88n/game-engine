@@ -1,8 +1,10 @@
-#ifndef GAMEOBJECT_H
-#define GAMEOBJECT_H
+#ifndef GAMEOBJECT_HPP
+#define GAMEOBJECT_HPP
 
-#include "components.h"
-#include "../../includes/coreincludes.h"
+#include "components.hpp"
+#include "raylib.h"
+#include "raymath.h"
+#include "Engine/Lib/Base/types.h"
 
 namespace Engine {
 

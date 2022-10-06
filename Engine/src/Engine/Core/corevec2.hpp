@@ -3,7 +3,9 @@
 #ifndef COREVEC2_HPP
 #define COREVEC2_HPP
 
-#include "../includes/coreincludes.h"
+#include "Engine/Lib/Base/types.h"
+#include "raymath.h"
+#include "raylib.h"
 
 namespace Engine {
     

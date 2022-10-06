@@ -1,10 +1,12 @@
-#ifndef COMPONENTS_H
-#define COMPONENTS_H
+#ifndef COMPONENTS_HPP
+#define COMPONENTS_HPP
 
-#include "../../includes/coreincludes.h"
+#include "Engine/Lib/Base/types.h"
+#include "raylib.h"
+#include "raymath.h"
 
 namespace Engine {
-
+    // Transform component.
     class TransformComponent {
     // Functions and Constructors
     public:
@@ -20,7 +22,6 @@ namespace Engine {
             return MatrixMultiply(MatrixMultiply(MatrixTranslate(Translation.x, Translation.y,
                                 Translation.z), rotation), MatrixScale(Scale.x, Scale.y, Scale.z));
         }
-
     // Variables
     public:
 
@@ -28,7 +29,7 @@ namespace Engine {
         Vec3 Rotation = { 0.0f, 0.0f, 0.0f };
         Vec3 Scale = { 1.0f, 1.0f, 1.0f };
     };
-
+    // Colider component.
     class BoxCollider2DComponent {
     // Functions and Constructors
     public:
@@ -42,14 +43,14 @@ namespace Engine {
         Vec2 Offset = { 0.0f, 0.0f };
         Vec2 Size = { 0.5f, 0.5f };
 
-        float Density = 1.0f;
-		float Friction = 0.5f;
-		float Restitution = 0.0f;
-		float RestitutionThreshold = 0.5f;
+        f32 Density = 1.0f;
+		f32 Friction = 0.5f;
+		f32 Restitution = 0.0f;
+		f32 RestitutionThreshold = 0.5f;
 
         void* RuntimeFixture = nullptr;
     };
-
+    // Main physics component.
     class Rigidbody2DComponent {
     // Functions and Constructors
     public:
@@ -66,40 +67,44 @@ namespace Engine {
 
     	void* RuntimeBody = nullptr;
     };
-
+    // Component to use camera for object.
     class CameraComponent {
     // Functions and Constructor
     public:
 
         CameraComponent() = default;
-        CameraComponent(Vec2 offset, Vec2 target, f32 rotation, f32 zoom) : offset(offset), 
-                                          target(target), rotation(rotation), zoom(zoom) {}
+        CameraComponent(Vec2 offset, Vec2 target, f32 rotation, f32 zoom) : Offset(offset), 
+                                          Target(target), Rotation(rotation), Zoom(zoom) {}
 		CameraComponent(const CameraComponent&) = default;
-
     // Variables
     public:
-        Vec2 offset = { 0.0f, 0.0f };
-        Vec2 target = { 1.0f, 1.0f };
-        f32 rotation = 0.0f;
-        f32 zoom = 1.0f;
-        Cam2D Camera = {offset, target, rotation, zoom};
+
+        Vec2 Offset = { 0.0f, 0.0f };
+        Vec2 Target = { 1.0f, 1.0f };
+        f32 Rotation = 0.0f;
+        f32 Zoom = 1.0f;
+        Cam2D Camera = {Offset, Target, Rotation, Zoom};
         bool FixedAspectRatio = false;
     };
+    
+    // Component to rendeer sprite with color / texture.
+    
     class SpriteRendererComponent {
     // Functions and Constructors
     public:
+
         SpriteRendererComponent() = default;
 	    SpriteRendererComponent(const SpriteRendererComponent&) = default;
 		SpriteRendererComponent(const Color color)
 			: color(color) {}
-
     // Variables
     public: 
+
         Color color;
         T2D Texture;
-        float TilingFactor = 1.0f;
-
+        f32 TilingFactor = 1.0f;
     };
+    // List of all components
     template<typename... Component>
     struct ComponentGroup {};
 

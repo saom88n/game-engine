@@ -1,3 +1,2 @@
 #! /bin/bash
-
-clang++ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL src/lib/libraylib.a src/main.cpp  -Wcomment -o main
+cc -I Engine/src/ Engine/src/Engine/main.cpp -lraylib -lGL -lm -lpthread -ldl -lX11 -std=c++20

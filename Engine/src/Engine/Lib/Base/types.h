@@ -2,7 +2,7 @@
 #define TYPES_H
 
 #include <inttypes.h>
-#include "raymath.h"
+// #include "raymath.h"
 #include "raylib.h"
 
 // Default types 

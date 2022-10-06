@@ -5,7 +5,7 @@
 #ifndef COLORS_HPP
 #define COLORS_HPP
 
-#include "../../includes/colorincludes.h"
+#include "raylib.h"
 
 #define ALICE_BLUE    (Color) {240, 247, 255, 255}      // 94%, 97%, 100%, 100%
 #define ANTIQUE_WHITE (Color) {250, 235, 214, 255}      // 98%, 92%, 84%, 100%
