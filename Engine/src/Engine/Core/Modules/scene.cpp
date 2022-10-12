@@ -1,10 +1,12 @@
 #pragma once
 
-#include "Scene.hpp"
+#include "scene.hpp"
 
 #include "Engine/Lib/Base/types.h"
+#include "Engine/Lib/Base/uuid.h"
 #include "entt/entt.hpp"
 #include "gameobject.hpp"
+#include <iostream>
 
 namespace Engine {
 Scene::Scene() {}

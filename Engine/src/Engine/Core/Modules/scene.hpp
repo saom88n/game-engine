@@ -9,6 +9,8 @@
 
 namespace Engine {
 
+class GameObject;
+
 class Scene {
 public:
   Scene();
@@ -17,7 +19,7 @@ public:
   GameObject CreateObjectWithUUID(UUID uuid,
                                   const std::string &name = std::string());
   void DestroyObject(GameObject obj);
-
+  
 private:
   entt::registry Registry;
   friend class GameObject;
