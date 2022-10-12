@@ -5,33 +5,33 @@
 // #include "raymath.h"
 #include "raylib.h"
 
-// Default types 
+// Default types
 
-typedef uint8_t  u8 ;
+typedef uint8_t u8;
 typedef uint16_t u16;
 typedef uint32_t u32;
 typedef uint64_t u64;
 
-typedef int8_t   i8 ;
-typedef int16_t  i16;
-typedef int32_t  i32;
-typedef int64_t  i64;
+typedef int8_t i8;
+typedef int16_t i16;
+typedef int32_t i32;
+typedef int64_t i64;
 
-typedef float    f32;
-typedef double   f64;
+typedef float f32;
+typedef double f64;
 
 // Math types
 
-typedef Vector2  Vec2;
-typedef Vector3  Vec3;
-typedef Vector4  Vec4;
+typedef Vector2 Vec2;
+typedef Vector3 Vec3;
+typedef Vector4 Vec4;
 
-typedef Matrix   Mat ;
+typedef Matrix Mat;
 
 // Figures etc.
 
-typedef Texture2D T2D ;
+typedef Texture2D T2D;
 typedef Rectangle Rect;
-typedef Image     Img ;
+typedef Image Img;
 typedef Camera2D Cam2D;
 #endif
