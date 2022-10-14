@@ -4,8 +4,29 @@
 #include "Engine/Lib/Base/types.h"
 #include "raylib.h"
 #include "raymath.h"
+#include "Engine/Lib/Base/uuid.h"
+#include <string>
 
 namespace Engine {
+
+struct IDComponent
+	{
+		UUID ID;
+
+		IDComponent() = default;
+		IDComponent(const IDComponent&) = default;
+	};
+
+	struct TagComponent
+	{
+		std::string Tag;
+
+		TagComponent() = default;
+		TagComponent(const TagComponent&) = default;
+		TagComponent(const std::string& tag)
+			: Tag(tag) {}
+	};
+
 // Transform component.
 class TransformComponent {
   // Functions and Constructors

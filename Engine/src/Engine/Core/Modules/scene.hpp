@@ -19,7 +19,8 @@ public:
   GameObject CreateObjectWithUUID(UUID uuid,
                                   const std::string &name = std::string());
   void DestroyObject(GameObject obj);
-  
+  template <typename T> void OnComponentAdded(GameObject obj, T &component);
+
 private:
   entt::registry Registry;
   friend class GameObject;
