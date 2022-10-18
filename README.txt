@@ -1,10 +1,7 @@
 C GAME ENGINE
 
-* src              - source code directory
-* src/core         - game engine core
-* src/core/modules - game engine modules
-* src/lib          - game engine libs
-
+* Engine/src/Engine - Engine files
+* Engine/src/Vendor - other libs
 * books            - books and topics
 
 --------------------------------------------
@@ -14,9 +11,3 @@ C GAME ENGINE
 
 * other   files 
 * #define FILENAME_H
-
---------------------------------------------
-
-* Function names    PascalCase
-* Variable names    snake_case
-* const and defines UPPERCASE
